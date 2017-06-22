@@ -38,6 +38,7 @@
 		C6FDAFA61EFBB80B00496129 /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		C6FDAFA81EFBB9AE00496129 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		C6FDAFAA1EFBBAE500496129 /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
+		C6FDAFAC1EFBF1CD00496129 /* social.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = social.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +83,7 @@
 		C62AF2821EFA988B0065A28F /* social */ = {
 			isa = PBXGroup;
 			children = (
+				C6FDAFAC1EFBF1CD00496129 /* social.entitlements */,
 				C6FDAFA31EFBB5CA00496129 /* Utilities */,
 				C62AF2991EFA9F980065A28F /* Model */,
 				C62AF2981EFA9F910065A28F /* View */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 69824PU5FC;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -395,6 +402,7 @@
 			baseConfigurationReference = B8F9ADFC17CB8692A2A0FAA0 /* Pods-social.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = social/social.entitlements;
 				DEVELOPMENT_TEAM = 69824PU5FC;
 				INFOPLIST_FILE = social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -409,6 +417,7 @@
 			baseConfigurationReference = 2D23F311E2A1D36C2E1C5980 /* Pods-social.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = social/social.entitlements;
 				DEVELOPMENT_TEAM = 69824PU5FC;
 				INFOPLIST_FILE = social/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

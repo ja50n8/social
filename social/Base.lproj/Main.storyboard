@@ -127,11 +127,48 @@
                     <connections>
                         <outlet property="emailField" destination="vdG-Qa-zdg" id="8eI-GY-uNG"/>
                         <outlet property="pwdField" destination="mQG-oo-sYg" id="3Mt-Qd-MLu"/>
+                        <segue destination="qBg-LH-PpV" kind="show" identifier="goToFeed" id="xL7-Bd-cHM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="-351" y="122"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="b27-eG-5CE">
+            <objects>
+                <viewController id="qBg-LH-PpV" customClass="FeedVC" customModule="social" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fj5-0p-GNO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qqc-ik-jGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EPg-Yz-r8U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aei-9U-5e0">
+                                <rect key="frame" x="125" y="314" width="124" height="39"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="qBg-LH-PpV" eventType="touchUpInside" id="Gjm-Fy-qKo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.51372549020000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aei-9U-5e0" firstAttribute="centerX" secondItem="EPg-Yz-r8U" secondAttribute="centerX" id="1I4-SO-h0x"/>
+                            <constraint firstItem="aei-9U-5e0" firstAttribute="centerY" secondItem="EPg-Yz-r8U" secondAttribute="centerY" id="NqD-C9-Vle"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="8uq-Z7-mn2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6o-EH-EJI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="421.60000000000002" y="121.88905547226388"/>
         </scene>
     </scenes>
     <resources>
